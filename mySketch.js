@@ -29,14 +29,14 @@ function preload() {
 
 function setup() {
   // 캔버스 생성 및 기본 설정
-  createCanvas(cityImg.width * imgscale * 1.5, cityImg.height * imgscale * 1.5);
+  createCanvas(cityImg.width * imgscale/2, cityImg.height * imgscale/2);
   background(100);
   noStroke();
   rectMode(CENTER);
   ellipseMode(CENTER);
 
   // 이미지 크기 조절 및 배경으로 출력
-  cityImg.resize(cityImg.width * imgscale * 1.5, cityImg.height * imgscale * 1.5);
+  cityImg.resize(cityImg.width * imgscale/2, cityImg.height * imgscale /2);
   image(cityImg, 0, 0);
 
   // 소리 설정 및 반복 재생
